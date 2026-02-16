@@ -100,7 +100,7 @@ ul {
 /*Components - Íconos personalizados Nota: Copiado y pegado de style.css de los archivos descargados de icomoon con algunas ediciones*/
 @font-face {
     font-family: 'icomoon';
-    src:  url(../media/icomoon/icomoon.woff2) format(.woff2);
+    src: url(../media/icomoon/icomoon.woff2);
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -109,7 +109,6 @@ ul {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
