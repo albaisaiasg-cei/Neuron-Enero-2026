@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kpt0zb');
+  src:  url('fonts/icomoon.eot?kpt0zb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kpt0zb') format('truetype'),
+    url('fonts/icomoon.woff?kpt0zb') format('woff'),
+    url('fonts/icomoon.svg?kpt0zb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-AngularLogo:before {
+  content: "\e900";
+}
+.icon-ArrowDown:before {
+  content: "\e901";
+}
+.icon-ArrowDownLeft:before {
+  content: "\e902";
+}
+.icon-ArrowDownRight:before {
+  content: "\e903";
+}
+.icon-ArrowUp:before {
+  content: "\e904";
+}
+.icon-ArrowUpLeft:before {
+  content: "\e905";
+}
+.icon-ArrowUpRight:before {
+  content: "\e906";
+}
+.icon-Atom:before {
+  content: "\e907";
+}
+.icon-Barcode:before {
+  content: "\e908";
+}
+.icon-BellSimple:before {
+  content: "\e909";
+}
+.icon-BoundingBox:before {
+  content: "\e90a";
+}
+.icon-CalendarBlank:before {
+  content: "\e90b";
+}
+.icon-CaretDown:before {
+  content: "\e90c";
+}
+.icon-ChatCenteredDots:before {
+  content: "\e90d";
+}
+.icon-CheckCircle:before {
+  content: "\e90e";
+}
+.icon-CrossCircle:before {
+  content: "\e90f";
+}
+.icon-Envelope:before {
+  content: "\e910";
+}
+.icon-InstagramLogo:before {
+  content: "\e911";
+}
+.icon-LinkedinLogo:before {
+  content: "\e912";
+}
+.icon-MapPinSimple:before {
+  content: "\e913";
+}
+.icon-Menu:before {
+  content: "\e914";
+}
+.icon-PhoneOutgoing:before {
+  content: "\e915";
+}
+.icon-PinterestLogo:before {
+  content: "\e916";
+}
+.icon-Play:before {
+  content: "\e917";
+}
+.icon-User:before {
+  content: "\e918";
+}
+.icon-X:before {
+  content: "\e919";
+}
+.icon-XLogo:before {
+  content: "\e91a";
+}

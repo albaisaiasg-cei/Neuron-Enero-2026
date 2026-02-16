@@ -1,0 +1,593 @@
+/*Importar tipografías: En Google Fonts, desde Get font>Embed code. Si tienes ambas tipografías en el carrito te hace un solo import code.
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+/* /Importar tipografías Ya no es necesario importar desde Google Fonts, porque se hizo en local*/
+
+/*Import local de fuentes*/
+@font-face {
+    font-family: 'Hedvig Letters Serif', serif;
+    src: url(../media/type/HedvigLettersSerif-Regular-VariableFont_opsz.woff2);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Instrument Sans', sans-serif;
+    src: url(../media/type/InstrumentSans-VariableFont_wdth_wght.woff2);
+    font-style: normal;
+    font-display: swap;
+}
+/* /Import local de fuentes*/
+
+:root {
+    /*Colores*/
+	--color-text: #1F1F1F;
+    --color-light: #F3F3F3;
+    --color-red: #E26868;
+    --color-primary: #4391F0;
+    --color-transparency: #1F1F1FCC;
+
+    /*Fuentes*/
+    --font-titles: 'Hedvig Letters Serif', serif;
+    --font-text: 'Instrument Sans', sans-serif;
+
+    /*Tamaños*/
+    --max-width: 60.25rem;
+    --max-width-xl: 90rem;
+
+    /*Border-radius*/
+    --border-radius: 5px;
+}
+
+/*Reset CSS*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a , li {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+ul {
+    list-style: none;
+}
+/* /Reset CSS*/
+
+/*Media queries*/
+
+/* /Media queries*/
+
+/*Components*/
+.btn {
+    padding: .625rem 2rem;
+    border-radius: 38px;
+    background-color: var(--color-text);
+    color: var(--color-light);
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+
+    & span {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
+/*Para dar estilo a las tipografías se puede hacer con font-family, font-size y font-weight, pero también se pueden englobar en font. Para ello se pone el valor del peso, luego el tamaño de la tipografía y luego el estilo de tipografía-*/
+h1, .text-xl {
+    font: 400 clamp(3rem, 5vw, 4rem) var(--font-titles);
+    color: var(--color-text);
+}
+
+h2, .text-lg {
+    font: 400 clamp(1.5rem, 5vw, 2rem) var(--font-titles);
+    color: var(--color-text);
+}
+
+h3, .text-md {
+    font: 400 clamp(1.1875rem, 5vw, 1.5rem) var(--font-titles);
+    color: var(--color-text);
+}
+
+h4, .text-sm {
+    font: 500 clamp(1.0625rem, 5vw, 1.1875rem) var(--font-text);
+    color: var(--color-text);
+}
+
+p, .text-xs, label {
+    font: 400 .9375rem var(--font-text);
+    color: var(--color-text);
+}
+
+a, li, .link {
+    font: 500 .9375rem var(--font-text);
+    text-decoration: none;
+}
+
+.section {
+    padding: clamp(2rem, 5vw, 4rem) 1rem;
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/*Components - colores*/
+.bkgd__light {
+    background-color: var(--color-light);
+    color: var(--color-text);
+}
+
+.bkgd__blk {
+    background-color: var(--color-text);
+    color:  var(--color-light);
+}
+
+.bkgd__primary {
+    background-color: #4391F0;
+    color: var(--color-light);
+}
+
+.color__light {
+    color: var(--color-light);
+}
+/* /Components - colors*/
+
+/*Formulario intento Alba
+    .contact__form {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 32px;
+
+        & form {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: start;
+            gap: 16px;
+
+            & input, select {
+                background-color: var(--color-light);
+                padding: 16px 19px;
+                border-radius: 100px;
+                border: 1px solid transparent;
+
+                &:focus
+                {
+                    border-color: var(--color-text);
+                }
+            }
+        }
+    }
+
+    .contact__name-surname {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 16px;
+
+        & .contact-txt {
+            flex: 1 1 300;
+        }
+    }
+
+    .contact__texts {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 14px;
+
+    }
+/* /Formulario intento Alba*/
+
+/*Components - inputs*/
+input, select {
+    padding: 1rem 1.1875rem;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--color-light);
+    color: var(--color-text);
+    width: 100%;
+}
+
+.form--row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &.acceptance {
+        flex-direction: row-reverse;
+        justify-content: start;
+
+        & input {
+            /*En clase solo se dio width auto, pero en Figma tiene un tamaño fijo de 16px y un border radius de 0 pero no se puede editar fácil*/
+            width: auto;
+        }
+    }
+}
+/* /Components - inputs*/
+
+/* /Components*/
+
+/*Header*/
+.header {
+    padding: clamp(1rem, 5vw, 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+}
+
+.header__logo {
+    min-width: 5.75rem;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.header__menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /*Este valor no es necesario cambiarlo a rem xq en móvil se oculta*/
+    align-items: center;
+
+    @media (max-width: 720px) {
+        display: none;
+    }
+}
+
+.header__menu span {
+    @media (min-width: 720px) {
+        display: none;
+    }
+}
+
+.header__link a:hover {
+    opacity: 0.8;
+}
+/* /Header*/
+
+/*Footer*/
+.footer {
+    margin: .625rem;
+}
+
+.footer__block {
+    max-width: var(--max-width-xl);
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.footer__contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer__logo {
+    min-width: 8.25rem;
+}
+
+.footer__rrss {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.footer__legal {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.6875rem;
+    padding: 1rem 0;
+    opacity: 0.8;
+
+    & ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1.6875rem;
+    }
+}
+
+/* /Footer*/
+
+/*Sección 1 - Hero Banner*/
+.hero-banner {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: .625rem;
+}
+
+.hero-banner__bkgd {
+    /*background-image: url(../media/img/About-banner.webp);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat
+    /*Orden shorthand background: CIRAPCOS - color, image, repeat, attachment, position, clip, origin, size.*/
+    background: linear-gradient(rgba(31, 31, 31, 0.2), rgba(31, 31, 31, 0.2)), url(../media/img/Home-banner.webp) no-repeat center center / cover;
+    min-height: 90vh;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem;
+}
+/*Ya no se necesita porque se ha creado la clase color__light
+.hero-banner h1, .hero-banner h4 {
+    color: var(--color-light)
+}
+*/
+/* Ya no se necesita porque se ha creado la clase bkgd__light
+.hero-banner .btn {
+    background-color: var(--color-light);
+    color: var(--color-text);
+} */
+
+.hero-banner__block {
+    width: 100%;
+    display: flex;
+    flex-flow:column nowrap;
+    gap: 1rem;
+    padding: .625rem;
+    align-items: start;
+
+    @media (max-width: 720px) {
+        align-items: center;
+        text-align: center;
+
+        & .btn {
+            width: unset;
+        }
+    }
+}
+/* /Hero Banner*/
+
+/*Hero Text*/
+.hero-text__block {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text__img {
+    flex: 1 1 18.75rem;
+
+    & img {
+        border-radius: var(--border-radius);
+    }
+
+    @media (max-width:720px) {
+        order: 0;
+    }
+}
+
+.hero-text__content {
+    flex: 1 1 18.75rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-items: start;
+
+    @media (max-width: 720px) {
+        order: 1;
+    }
+}
+
+.hero-text__titles {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+/* /Hero Text*/
+
+/*Icons Cards*/
+.icons-cards__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10.625rem, 1fr));
+}
+
+.icons-cards__card {
+    flex: 1 1 9.375rem;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.icons-cards__title {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+/* /Icons Cards*/
+
+/*Hero Cards*/
+.hero-cards__block {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+}
+
+.hero-cards__cards-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18.75rem, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.hero-cards__card {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    
+    & img {
+        border-radius: var(--border-radius);
+        max-height: 11.125rem;
+        object-fit: cover;
+    }
+}
+
+/* /Hero Cards*/
+
+/*Hero Pricing Cards*/
+.hero-pricing__block {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.hero-pricing__card {
+    display: flex;
+    flex: 1 1 15.625rem;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.hero-pricing__CTA {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero-pricing__list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .625rem;
+}
+
+.hero-pricing__list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.25rem;
+    align-items: center;
+    
+    & .icn__cancel{
+        color: var(--color-red);
+    }
+
+    & .icn__check {
+        color: inherit;
+    }
+}
+
+
+iframe {
+    width: 100%;
+}
+
+/*Contact*/
+.contact form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.contact__block {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4rem;
+}
+.contact__map {
+    flex: 2.5 1 18.75rem;
+
+    & iframe {
+        width: 100%;
+        height: 33.3125rem;
+        filter: grayscale(1);
+        border-radius: var(--border-radius);
+    }
+}
+
+.contact__content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    flex: 1 1 18.75rem;
+}
+
+.contact__heading {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .875rem;
+}
+/* /Contact*/
+
+/*Posts*/
+.posts__block {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.posts__CTA {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.posts__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19.375rem, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+
+    @media (max-width: 720px) {
+        gap: 2rem;
+    }
+
+}
+
+.posts__card {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+
+    & img {
+        border-radius: var(--border-radius);
+    }
+}
+
+/* /Posts*/

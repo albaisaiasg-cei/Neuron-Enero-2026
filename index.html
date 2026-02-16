@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuron</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--Ya no es necesario importar desde Google Fonts, porque se hizo en local-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+<!--Header de navegación - Me gustaría revisitar para integrar el logo no como imagen y que herede color-->
+<header class="header">
+    <a href="#"><img class="header__logo" src="media/logo/logo-black.svg" alt="Logo tipográfico de Neuron"></a>
+    <nav class="header__menu">
+        <ul>
+            <li class="header__link"><a href="index.html">Home</a></li>
+            <li class="header__link"><a href="services.html">Services</a></li>
+            <li class="header__link"><a href="about-us.html">About us</a></li>
+            <li class="header__link"><a href="news.html">News</a></li>
+            <li class="header__link"><a href="#price">Price</a></li>
+            <li class="header__link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#"><span class="material-symbols-outlined">menu</span></a>
+    </nav>
+</header>
+
+<!--Hero Banner-->
+<section class="section hero-banner">
+    <div class="hero-banner__bkgd">
+        <div class="container hero-banner__block">
+            <h1 class="color__light">We’r on the road.</h1>
+            <h4 class="color__light">Secure and efficient enterprise digitization.</h4>
+            <a href="#" class="bkgd__light btn">Check our services</a>
+        </div>
+    </div>
+</section>
+
+<!--Hero Text About-->
+<section class="section hero-text">
+    <div class="container hero-text__block">
+        <div class="hero-text__img"><img src="media/img/Home-img-1.webp" alt="Gotas de pintura negra y blanca sobre fondo claro"></div>
+        <div class="hero-text__content">
+            <div class="hero-text__titles">
+                <h2>A little bit about us.</h2>
+                <h4>Not enought for sure.</h4>
+            </div>
+            <p>We are a business digitalization company that will help you get what you want: to have an online presence in front of your competition. Specialists in the field of digitization of publishers and magazines.</p>
+            <a href="#" class="btn">More about us<span class="material-symbols-outlined">arrow_outward</span></a>
+        </div>
+    </div>
+</section>
+
+<!--Icons Cards-->
+<section class="section icons-cards">
+    <div class="container icons-cards__block">
+        <!--Card 1 - Modern-->
+        <div class="icons-cards__card">
+            <div class="icons-cards__title">
+                <span class="material-symbols-outlined">favorite</span>
+                <h4>Modern.</h4>
+            </div>
+            <p>We use the latest technology.</p>
+        </div>
+        <!--Card 2 - Easy-->
+        <div class="icons-cards__card">
+            <div class="icons-cards__title">
+                <span class="material-symbols-outlined">favorite</span>
+                <h4>Easy.</h4>
+            </div>
+            <p>Easy editing without restrictions.</p>
+        </div>
+        <!--Card 3 - Editable-->
+        <div class="icons-cards__card">
+            <div class="icons-cards__title">
+                <span class="material-symbols-outlined">favorite</span>
+                <h4>Editable.</h4>
+            </div>
+            <p>You will be able to edit everything.</p>
+        </div>
+        <!--Card 4 - Connected-->
+        <div class="icons-cards__card">
+            <div class="icons-cards__title">
+                <span class="material-symbols-outlined">favorite</span>
+                <h4>Connected.</h4>
+            </div>
+            <p>Always keep your community informed.</p>
+        </div>
+    </div>
+</section>
+
+<!--Hero Text-->
+<section class="section hero-text">
+    <div class="container hero-text__block">
+        <div class="hero-text__content">
+            <div class="hero-text__titles">
+                <h2>We make everything easy.</h2>
+                <h4>Or so we are told.</h4>
+            </div>
+            <p>We keep the essence of your business, no worries, just ease of use, speed, and constant communication with our team of professionals. What else?</p>
+            <a href="#" class="btn">Let me in<span class="material-symbols-outlined">arrow_outward</span></a>
+        </div>
+        <div class="hero-text__img"><img src="media/img/Home-img-2.webp" alt="Franjas de olas metálicas en fondo negro."></div>
+    </div>
+</section>
+
+<!--Hero Cards Servicios-->
+<section class="section hero-cards">
+    <div class="container hero-cards__block">
+        <h2>What can we do.</h2>
+        <p>Take a look at our most outstanding services, surely some of them will interest you.</p>
+        <div class="hero-cards__cards-holder">
+            <!--Card 1-->
+            <article class="hero-cards__card">
+                <img src="media/img/Services-1.webp" alt="Foto a blanco y negro de hongos">
+                <h4>Web development</h4>
+                <p>We convert your business into a fully functional and editable website, with what your business requires, fast and easy to use.</p>
+            </article>
+            <!--Card 2-->
+            <article class="hero-cards__card">
+                <img src="media/img/Services-2.webp" alt="Destellos de luz sobre fondo oscuro">
+                <h4>App development</h4>
+                <p>Your audience will always be on their cell phones. Why complicate things for them? Make it easy for them with a modern app.</p>
+            </article>
+        </div>
+        <a href="#" class="btn">See all services</a>
+    </div>
+</section>
+
+<!--Hero Pricing Cards-->
+<section id="price" class="section hero-pricing">
+    <div class="container hero-pricing__block">
+        <!--Basic Plan-->
+        <div class="bkgd__light hero-pricing__card">
+            <div class="hero-pricing__CTA">
+                <h3>Basic Plan</h3>
+                <span class="text-xl">99€</span>
+                <a href="#" class="btn">Try it for free<span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+            <ul class="hero-pricing__list">
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>UX/UI</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>WordPress</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Customized panel</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>Neuhost access</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>Neuron Studio</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>Web development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>App development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>SEO/SEM</li>
+            </ul>
+        </div>
+        <!--Pro Plan-->
+        <div class="bkgd__blk hero-pricing__card">
+            <div class="hero-pricing__CTA">
+                <h3 class="color__light">Pro Plan</h3>
+                <span class="color__light text-xl">129€</span>
+                <a href="#" class="bkgd__light btn">Try it for free<span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+            <ul class="hero-pricing__list">
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>UX/UI</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>WordPress</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Customized panel</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Neuhost access</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Neuron Studio</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>Web development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>App development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__cancel material-symbols-outlined">cancel</span>SEO/SEM</li>
+            </ul>
+        </div>
+        <!--Xtreme Plan-->
+        <div class="bkgd__light hero-pricing__card">
+            <div class="hero-pricing__CTA">
+                <h3>Xtreme Plan</h3>
+                <span class="text-xl">199€</span>
+                <a href="#" class="btn">Try it for free<span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+            <ul class="hero-pricing__list">
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>UX/UI</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>WordPress</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Customized panel</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Neuhost access</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Neuron Studio</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>Web development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>App development</li>
+                <li class="hero-pricing__list-item">
+                    <span class="icn__check material-symbols-outlined">check_circle</span>SEO/SEM</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--Sección contacto intento Alba
+<section class="section contact">
+    <div class="container contact__block">
+        <div class="contact__map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.689619898796082%2C40.4191976176234%2C-3.686723113059998%2C40.422595456971194&amp;layer=mapnik" frameborder="0"></iframe>
+        </div>
+        <div class="contact__form">
+            <div class="contact__texts">
+                <h2>Contact with us</h2>
+                <p>You can also check other ways to contact us on the <a href="#">contact page</a>.</p>
+            </div>
+            <form action="#" method="post">
+                <div class="contact__name-surname">
+                    <div class="contact__input-txt">
+                    <label for="name"></label>
+                    <input id="name" type="text" placeholder="Name" name="name" required>
+                </div>
+                <div class="contact__input-txt">
+                    <label for="surname"></label>
+                    <input id="surname" type="text" placeholder="Surname" name="surname">
+                </div>
+                </div>
+                <div class="contact__input-txt">
+                    <label for="email"></label>
+                    <input id="email" type="email" placeholder="E-mail" name="email">
+                </div>
+                <div class="contact__input-dd">
+                    <label for="services"></label>
+                    <select id="services" name="services">
+                        <option value="services" disabled selected>Select the service</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="app-development">App Development</option>
+                        <option value="neuhost">Neuhost</option>
+                        <option value="neuro-studio">Neuron Studio</option>
+                        <option value="WordPress">WordPress</option>
+                        <option value="uxui">UX/UI</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="text-xs contact__input-priv">
+                    <input type="checkbox" required>
+                    <label for="privacy-policy">I have read and accept the <a href="#">privacy policy</a></label>
+                </div>
+                <button class="btn bkgd__primary" type="submit">Send<span class="material-symbols-outlined">arrow_outward</span></button>                
+            </form>
+        </div>
+    </div>
+</section>
+<!-- /Sección contacto intento Alba-->
+
+<!--Contact siguiendo a Pedro-->
+<section class="section contact">
+    <div class="container contact__block">
+        <div class="contact__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9082.118912675913!2d-3.694707479941264!3d40.424941501022474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1770633867108!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact__content">
+            <div class="contact__heading">
+                <h2>Contact with us</h2>
+                <p>You can also check other ways to contact us on the <a href="#">contact page</a>.</p>
+            </div>
+            <!--Se agrega display:none a cada label para que no ocupe espacio y ocultarlo-->
+            <form action="#" method="post">
+                <!--Se le dio la clase form__row para que se pueda reutilizar en otras partes del sitio-->
+                <div class="form--row">
+                    <!--Campo nombre-->
+                    <label for="name" style="display: none;"></label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+
+                    <!--Campo apellido-->
+                    <label for="surname" style="display: none;"></label>
+                    <input type="text" name="surname" id="surname" placeholder="Surname">
+                </div>
+
+                <!--Campo email-->
+                <label for="email" style="display: none;"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+
+                <!--Selector servicios-->
+                <label for="services" style="display: none;"></label>
+                <select name="services" id="services">
+                    <option value="services" selected disabled>Select the service</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="app-development">App Development</option>
+                    <option value="neuhost">Neuhost</option>
+                    <option value="neuro-studio">Neuron Studio</option>
+                    <option value="WordPress">WordPress</option>
+                    <option value="uxui">UX/UI</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!--Checkbox privacidad-->
+                <div class="form--row acceptance">
+                    <label for="check" class="text-xs">I have read and accept the <a href="#">privacy policy</label>
+                    <input type="checkbox" name="check" id="check">
+                </div>
+
+                <!--Submit-->
+                <input type="submit" value="Send" class="btn bkgd__primary">
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--Posts-->
+<section class="section posts">
+    <div class="container posts__block">
+        <div class="posts__CTA">
+            <h2>Latest post</h2>
+            <a href="#" class="btn">Go read all our posts<span class="material-symbols-outlined">arrow_outward</span></a>
+        </div>
+        <div class="posts__grid">
+            <!--Card 1-->
+            <div class="posts__card">
+                <img src="media/img/News-1.webp" alt="abstract black and white illustration of waves">
+                <h4>The Ultimate Guide to Digital Transformation for Small...</h4>
+                <p>Embracing digital transformation is essential for small businesses seeking growth and resilience...</p>
+                <a href="#">Read more</a>
+            </div>
+            <!--Card 2-->
+            <div class="posts__card">
+                <img src="media/img/News-2.webp" alt="blurred black and white photo of a city skyline">
+                <h4>Why Cloud Solutions Are the Backbone of Modern Enterprises</h4>
+                <p>Cloud technologies offer flexibility, security, and scalability for all types of organizations. Learn how cloud solutions...</p>
+                <a href="#">Read more</a>
+            </div>
+            <!--Card 3-->
+            <div class="posts__card">
+                <img src="media/img/News-3.webp" alt="closeup black and white picture of textured arquitecture">
+                <h4>Automate to Innovate: How Workflow Automation Boosts...</h4>
+                <p>Implementing workflow automation helps eliminate repetitive tasks and human error. Explore key automation tools and...</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <h4>We write for you, with love from neuron.</h4>
+    </div>
+</section>
+
+<!--Footer - Me gustaría revisitar para integrar el logo no como imagen y que herede el color-->
+<footer class="footer">
+    <div class="bkgd__blk footer__block">
+        <div class="footer__contact">
+            <a href="#"><img class="footer__logo" src="media/logo/logo-light.svg" alt="Logo tipográfico de Neuron"></a>
+            <ul class="footer__rrss">
+                <!--Instagram-->
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">star</span></a>
+                </li>
+                <!--X-->
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">star</span></a>
+                </li>
+                <!--Pinterest-->
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">star</span></a>
+                </li>
+                <!--LinkedIn-->
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">star</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__legal">
+            <ul>
+                <li>
+                    <a href="#">Legal Notice</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Cookies Policy</a>
+                </li>
+            </ul>  
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
