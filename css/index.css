@@ -300,9 +300,16 @@ select {
         display: none;
     }
 }
+.header__link a {
+    opacity: .5;
 
-.header__link a:hover {
-    opacity: 0.8;
+    &.current {
+        opacity: 1;
+    }
+
+    &:hover {
+    opacity: 1;
+}
 }
 /* /Header*/
 
@@ -375,6 +382,31 @@ select {
     justify-content: center;
     align-items: center;
     padding: .625rem;
+}
+
+.services__bkgd, .about-us__bkgd, .news__bkgd, .contact__bkgd {
+    min-height: 30vh;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem;
+}
+
+.services__bkgd {
+    background: linear-gradient(rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), url(../media/img/Services-banner.webp) no-repeat center center / cover;
+}
+
+.about-us__bkgd {
+    background: linear-gradient(rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), url(../media/img/About-banner.webp) no-repeat center center / cover;
+}
+
+.news__bkgd {
+    background: linear-gradient(rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), url(../media/img/News-banner.webp) no-repeat center center / cover;
+}
+
+.contact__bkgd {
+    background: linear-gradient(rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), url(../media/img/Contact-banner.webp) no-repeat center center / cover;
 }
 /*Ya no se necesita porque se ha creado la clase color__light
 .banner h1, .banner h4 {
