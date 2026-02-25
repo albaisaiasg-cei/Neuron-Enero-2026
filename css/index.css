@@ -538,7 +538,7 @@ select {
     border-radius: var(--border-radius);
 }
 
-.pricing__CTA {
+.pricing__cta {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
