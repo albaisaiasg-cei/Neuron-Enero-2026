@@ -616,7 +616,7 @@ iframe {
     gap: 2rem;
 }
 
-.posts__CTA {
+.posts__cta {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
