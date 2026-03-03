@@ -34,6 +34,7 @@
     --color-red: #E26868;
     --color-primary: #4391F0;
     --color-transparency: #1F1F1FCC;
+    --color-white: #FFFFFF;
 
     /*Fuentes*/
     --font-titles: 'Hedvig Letters Serif', serif;
@@ -85,6 +86,16 @@ a {
 
 ul {
     list-style: none;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 /* /Reset CSS*/
 
@@ -289,13 +300,9 @@ select {
     display: flex;
     gap: 2rem; /*Este valor no es necesario cambiarlo a rem xq en móvil se oculta*/
     align-items: center;
-
-    @media (max-width: 720px) {
-        display: none;
-    }
 }
 
-.header__menu span {
+.header__menu button {
     @media (min-width: 720px) {
         display: none;
     }
@@ -361,6 +368,17 @@ select {
     }
 }
 /* /Footer*/
+
+/*Popup Menu*/
+.popup-menu {
+    
+    & .icon-X {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+/*Popup Menu*/
 
 /*Banner*/
 .banner {
@@ -642,3 +660,36 @@ iframe {
     gap: 1rem;
 }
 /* /Posts*/
+
+/*Media queries*/
+@media (max-width: 720px) {
+    .header__menu ul {
+        display: none;
+    }
+    
+    .header__menu.active ul {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+        padding: 4rem;
+        background-color: var(--color-white);
+
+        & li a {
+            font: 400 clamp(1.5rem, 5vw, 2rem) var(--font-titles);
+        }
+
+        & .icon-X {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2rem;
+        }
+    }
+}
+/* /Media queries*/

@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuron</title>
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
     <!--Ya no es necesario importar desde Google Fonts ni Material Design, porque se hizo en local <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"> -->
 </head>
 
 <body>
 <!--Header-->
 <header class="header">
-    <a title="Home page" href="index.html"><img class="header__logo" src="media/logo/logo-black.svg" alt="Logo tipográfico de Neuron"></a>
-    <nav class="header__menu">
+    <a title="Home page" href="index.html">
+        <img class="header__logo" src="media/logo/logo-black.svg" alt="Logo tipográfico de Neuron">
+    </a>
+    <nav id="menuNav" class="header__menu">
         <ul>
             <li class="header__link"><a title="Home page" class="current" href="#">Home</a></li>
             <li class="header__link"><a title="Services page" href="services.html">Services</a></li>
@@ -20,8 +23,15 @@
             <li class="header__link"><a title="News page" href="news.html">News</a></li>
             <li class="header__link"><a title="Price section" href="#price">Price</a></li>
             <li class="header__link"><a title="Contact page" href="contact.html">Contact</a></li>
+            <li>
+                <button onclick="toggleMenu()">
+                    <span class="icon-X"></span>
+                </button>
+            </li>
         </ul>
-        <a title="Open menu" href="#"><span class="icon-Menu"></span></a>
+        <button onclick="toggleMenu()">
+            <span class="icon-Menu"></span>
+        </button>
     </nav>
 </header>
 <!-- /Header-->
@@ -371,6 +381,22 @@
     </div>
 </footer>
 <!-- /Footer-->
+
+<!--Popups-->
+<!--Popup - Menu
+<div id="popupMenu" class="popup-menu">
+    <button onclick="toggleMenu()"><span class="icon-X"></span></button>
+    <ul>
+        <li class="header__link"><a title="Home page" class="text-lg current" href="#">Home</a></li>
+        <li class="header__link"><a title="Services page" class="text-lg" href="services.html">Services</a></li>
+        <li class="header__link"><a title="About us page" class="text-lg" href="about-us.html">About us</a></li>
+        <li class="header__link"><a title="News page" class="text-lg" href="news.html">News</a></li>
+        <li class="header__link"><a title="Price section" class="text-lg" href="#price">Price</a></li>
+        <li class="header__link"><a title="Contact page" class="text-lg" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+    /Popup - Menu-->
+<!-- /Popups-->
 
 </body>
 </html>
